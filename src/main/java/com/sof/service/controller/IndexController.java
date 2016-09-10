@@ -27,9 +27,6 @@ public class IndexController {
     @RequestMapping("/")
     public String index(ModelMap map) {
         List<User> users = userService.selectByState(1);
-        /*
-         * for (User user : users) { System.out.println(user.getName()); }
-         */
         map.addAttribute("host", "http://www.richest007.net");
         System.out.println(users.get(0).getLoginName());
         return "index";
