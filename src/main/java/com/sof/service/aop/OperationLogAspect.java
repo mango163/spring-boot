@@ -28,7 +28,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Component
 public class OperationLogAspect {
 	
-    private Logger logger = Logger.getLogger(getClass());
+	private Logger logger = Logger.getLogger(getClass());
 
     @Pointcut("execution(public * com.sof.service.controller..*.*(..))")
     public void operationLog(){}

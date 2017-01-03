@@ -31,7 +31,7 @@ import com.sof.service.model.User;
 @RequestMapping(value="/user") 
 public class UserController {
 
-    static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
+	static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
     @ApiOperation(value="获取用户列表", notes="")
     @RequestMapping(value={""}, method=RequestMethod.GET)
